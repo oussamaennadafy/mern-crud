@@ -24,13 +24,11 @@ const Home = () => {
     });
 
     const data = await res.json();
-    console.log(data);
 
     if (res.status === 422 || !data) {
       console.log("error ");
     } else {
       setUserdata(data);
-      console.log("get data");
     }
   };
 

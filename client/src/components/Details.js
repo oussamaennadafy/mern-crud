@@ -3,10 +3,10 @@ import CreateIcon from '@mui/icons-material/Create';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import WorkIcon from '@mui/icons-material/Work';
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+// import MailOutlineIcon from '@mui/icons-material/MailOutline';
+// import WorkIcon from '@mui/icons-material/Work';
+// import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { NavLink, useParams, useHistory } from 'react-router-dom';
 
 
