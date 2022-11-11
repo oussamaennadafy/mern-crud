@@ -72,8 +72,8 @@ const Register = () => {
       <NavLink to="/">home</NavLink>
       <form className="mt-4">
         <div className="row">
-          <div class="mb-3 col-lg-6 col-md-6 col-12">
-            <label for="exampleInputEmail1" class="form-label">
+          <div className="mb-3 col-lg-6 col-md-6 col-12">
+            <label htmlFor="exampleInputEmail1" className="form-label">
               departure City
             </label>
             <input
@@ -81,13 +81,13 @@ const Register = () => {
               value={inpval.departureCity}
               onChange={setdata}
               name="departureCity"
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
           </div>
-          <div class="mb-3 col-lg-6 col-md-6 col-12">
-            <label for="exampleInputPassword1" class="form-label">
+          <div className="mb-3 col-lg-6 col-md-6 col-12">
+            <label htmlFor="exampleInputPassword1" className="form-label">
               arrivalCity
             </label>
             <input
@@ -95,12 +95,12 @@ const Register = () => {
               value={inpval.arrivalCity}
               onChange={setdata}
               name="arrivalCity"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
             />
           </div>
-          <div class="mb-3 col-lg-6 col-md-6 col-12">
-            <label for="exampleInputPassword1" class="form-label">
+          <div className="mb-3 col-lg-6 col-md-6 col-12">
+            <label htmlFor="exampleInputPassword1" className="form-label">
               departureTime
             </label>
             <input
@@ -108,12 +108,12 @@ const Register = () => {
               value={inpval.departureTime}
               onChange={setdata}
               name="departureTime"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
             />
           </div>
-          <div class="mb-3 col-lg-6 col-md-6 col-12">
-            <label for="exampleInputPassword1" class="form-label">
+          <div className="mb-3 col-lg-6 col-md-6 col-12">
+            <label htmlFor="exampleInputPassword1" className="form-label">
               arrival Time
             </label>
             <input
@@ -121,12 +121,12 @@ const Register = () => {
               value={inpval.arrivalTime}
               onChange={setdata}
               name="arrivalTime"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
             />
           </div>
-          <div class="mb-3 col-lg-6 col-md-6 col-12">
-            <label for="exampleInputPassword1" class="form-label">
+          <div className="mb-3 col-lg-6 col-md-6 col-12">
+            <label htmlFor="exampleInputPassword1" className="form-label">
               seats
             </label>
             <input
@@ -134,12 +134,12 @@ const Register = () => {
               value={inpval.seats}
               onChange={setdata}
               name="seats"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
             />
           </div>
-          <div class="mb-3 col-lg-6 col-md-6 col-12">
-            <label for="exampleInputPassword1" class="form-label">
+          <div className="mb-3 col-lg-6 col-md-6 col-12">
+            <label htmlFor="exampleInputPassword1" className="form-label">
               Price
             </label>
             <input
@@ -147,11 +147,11 @@ const Register = () => {
               value={inpval.price}
               onChange={setdata}
               name="price"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
             />
           </div>
-          <button type="submit" onClick={addinpdata} class="btn btn-primary">
+          <button type="submit" onClick={addinpdata} className="btn btn-primary">
             Submit
           </button>
         </div>
