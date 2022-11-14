@@ -82,7 +82,7 @@ const Register = () => {
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
-              arrivalCity
+              arrival City
             </label>
             <input
               type="text"
@@ -93,8 +93,8 @@ const Register = () => {
             />
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
-            <label htmlFor="exampleInputPassword1" className="form-label">
-              departureTime
+            <label className="form-label">
+              departure Time
             </label>
             <input
               type="datetime-local"
@@ -106,7 +106,7 @@ const Register = () => {
             />
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
-            <label htmlFor="exampleInputPassword1" className="form-label">
+            <label className="form-label">
               arrival Time
             </label>
             <input
@@ -119,7 +119,7 @@ const Register = () => {
             />
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
-            <label htmlFor="exampleInputPassword1" className="form-label">
+            <label className="form-label">
               seats
             </label>
             <input
@@ -132,7 +132,7 @@ const Register = () => {
             />
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
-            <label htmlFor="exampleInputPassword1" className="form-label">
+            <label className="form-label">
               Price
             </label>
             <input

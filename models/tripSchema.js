@@ -13,6 +13,10 @@ const tripSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    departureDate: {
+        type: String,
+        required: true
+    },
     arrivalTime: {
         type: String,
         required: true
