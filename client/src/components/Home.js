@@ -65,7 +65,7 @@ const Home = () => {
             role="alert"
           >
             trip from <strong>{udata.departureCity}</strong> to
-            <strong>{udata.arrivalCity}</strong> added succesfully!
+            <strong> {udata.arrivalCity}</strong> added succesfully!
             <button
               type="button"
               className="btn-close"
@@ -84,7 +84,7 @@ const Home = () => {
             role="alert"
           >
             trip from <strong>{updata.departureCity}</strong> to
-            <strong>{udata.arrivalCity}</strong> updated succesfully!
+            <strong> {udata.arrivalCity}</strong> updated succesfully!
             <button
               type="button"
               className="btn-close"
@@ -128,14 +128,8 @@ const Home = () => {
           <table className="table">
             <thead>
               <tr className="table-dark">
-                <th scope="col">id</th>
-                <th scope="col">departure City</th>
-                <th scope="col">arrival City</th>
-                <th scope="col">departure time</th>
-                <th scope="col">arrival time</th>
-                <th scope="col">seats</th>
-                <th scope="col">price</th>
-                <th scope="col"></th>
+                {["id", "departure City", "arrival City","departure time", "arrival time", "seats", "price", ""].map((item) => <th key={item}>{item}</th>
+                )}
               </tr>
             </thead>
             <tbody>

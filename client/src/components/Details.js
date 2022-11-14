@@ -13,11 +13,7 @@ import { NavLink, useParams, useHistory } from 'react-router-dom';
 const Details = () => {
 
     const [gettripdata, settripdata] = useState([]);
-    console.log(gettripdata);
-
     const { id } = useParams("");
-    console.log(id);
-
     const history = useHistory();
 
 
@@ -31,14 +27,12 @@ const Details = () => {
         });
 
         const data = await res.json();
-        console.log(data);
 
         if (res.status === 422 || !data) {
             console.log("error ");
 
         } else {
             settripdata(data)
-            console.log("get data");
         }
     }
 
@@ -56,8 +50,6 @@ const Details = () => {
         });
 
         const deletedata = await res2.json();
-        console.log(deletedata);
-
         if (res2.status === 422 || !deletedata) {
             console.log("error");
         } else {
@@ -66,14 +58,6 @@ const Details = () => {
         }
 
     }
-/*
-        departureCity: "",
-        arrivalCity: "",
-        departureTime: "",
-        arrivalTime: "",
-        seats: "",
-        price: "",
-*/
     return (
         <div className="container mt-3">
             <Card sx={{ maxWidth: 600 }}>
@@ -91,7 +75,7 @@ const Details = () => {
                             <p className="mt-3">arrival Time: <span>{gettripdata.arrivalTime}</span></p>
                         </div>
                         <div className="right_view  col-lg-6 col-md-6 col-12">
-                            <p className="mt-5">seats: <span>+91 {gettripdata.seats}</span></p>
+                            <p className="mt-5">seats: <span>{gettripdata.seats}</span></p>
                             <p className="mt-3">price: <span>{gettripdata.price}</span></p>
                         </div>
                     </div>
